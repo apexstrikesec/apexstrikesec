@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Press Start 2P', cursive; /* This font gives a pixelated appearance */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 40px auto 0; /* 50px top margin, auto horizontal margins, 0 bottom margin */
+    border: 3px solid white; /* Pixelated border */
+    max-width: 70%; /* Adjust this value as needed */
+}
+
+td {
+    border: 3px solid white; /* Pixelated border */
+    padding: 10px;
+    font-size: 14px; /* Adjust as necessary */
+    line-height: 1.5; /* Adjusts the space between lines */
+}
+
+a {
+    color: #1d76fc; /* A bright color for contrast */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header, footer {
+    padding: 20px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+
+h1 {
+    font-size: 48px; /* You can adjust this value as needed */
+    margin-bottom: 10px; /* Reduced bottom margin */
+}
+
+#featured-image {
+    display: block;
+    max-width: 200px; /* Adjust this value as needed */
+    height: auto;
+    margin: 20px auto; /* Centers the image and adds some space above and below */
+}
+
+#flashing-period {
+    visibility: visible;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+#word-cycle {
+    animation-duration: 3s; /* Duration of each word display */
+    animation-fill-mode: forwards; /* Keeps the element in the state of the last keyframe when the animation is finished */
+}
